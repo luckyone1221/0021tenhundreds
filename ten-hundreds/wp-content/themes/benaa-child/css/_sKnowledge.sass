@@ -1,0 +1,132 @@
+.sKnowledge
+  &__title
+    padding: 0 0 rem(30) 0!important
+    @media (min-width: $lg)
+      padding: 0 0 rem(47px) 0!important
+    *
+      font-family: $default-font!important
+      line-height: 1.5
+    i
+      display: none!important
+    h2
+      color: $body-color2
+
+      font-size: rem(30)
+      @media (min-width: $md)
+        font-size: rem(35)
+
+      font-weight: 400!important
+      margin-bottom: 0!important
+      letter-spacing: rem(1)
+  &__row
+    margin-bottom: rem(40)!important
+    @media (min-width: $md)
+      margin-bottom: rem(60)!important
+    @media (min-width: $xl)
+      max-width: 1170px!important
+      margin: 0 auto 137px auto!important
+
+  &__video-col
+    margin-bottom: rem(30)
+    @media (min-width: $md)
+      margin-bottom: 0
+    .wpb_wrapper, .vc_column-inner
+      height: 100%
+    @media (min-width: $xl)
+      padding-right: 33px!important
+  &__video
+    //max-width: 486px
+    width: calc(100% - 35px)
+    margin-left: auto
+    *
+      font-family: $default-font!important
+      line-height: 1.5
+    h2
+      background-color: $gray-white
+      margin-bottom: 0!important
+      padding: rem(30) rem(25px) rem(60) rem(25px)
+      @media (min-width: $xl)
+        padding: 32px 25px 62px 32px //27 + 35 =
+
+      color: $body-color2
+      font-size: rem(16)!important
+      font-weight: 400!important
+
+      position: relative
+      &:before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        z-index: -1
+        width: 100%
+        padding-top: 72.42%
+        height: 0
+        background-color: $gray-white
+
+    .wpb_video_wrapper
+      position: relative
+      margin-left: -35px
+      margin-top: -35px
+  &__list-col
+    position: relative
+    @media (min-width: $xl)
+      left: -32px
+    //top: -12px
+    *
+      font-family: $default-font!important
+      line-height: 1.5
+    .wpb_wrapper, .vc_column-inner
+      height: 100%
+  &__item
+    & + &
+      margin-top: 4px!important
+    display: flex
+    align-items: flex-start
+    @media (min-width: $xl)
+      position: relative
+      margin-right: -26px
+    .icon-wrap
+      background-color: transparent!important
+      float: none!important
+      flex-shrink: 0!important
+      width: rem(32px) !important
+      height: rem(32px) !important
+      margin-right: rem(15px)!important
+      border: none!important
+
+      display: flex
+      align-items: center
+      justify-content: center
+
+      img
+        width: auto
+        height: auto
+        max-width: 100%
+        max-height: 100%
+    .info-wrap
+      h6
+        //@media (min-width: $xl)
+          padding-top: 5px
+        font-size: rem(16)!important
+        margin-bottom: 3px
+        font-weight: bold
+        color: $body-color2!important
+      p
+        font-size: rem(16)!important
+        color: $body-color2!important
+        line-height: 1.5!important
+      p:last-child
+        margin-bottom: rem(4)!important
+  &__lower-txt
+    padding-top: rem(30)
+    @media (min-width: $xl)
+      padding-top: rem(64)
+      margin-right: -30px
+
+    @media (min-width: $md)
+      padding-left: rem(46px)!important
+    color: $body-color2!important
+    font-weight: 700!important
+    font-size: rem(16)!important
+    //margin-top: 0!important

@@ -1,0 +1,82 @@
+.sVideoFact
+  &__video-col
+    padding-left: 15px!important
+    padding-right: 15px!important
+    .vc_column-inner
+      //background: pink!important
+      height: 0
+      padding: 76.84% 0 0 0
+      position: relative
+      z-index: 1
+      &:before
+        +mt
+        content: ''
+        z-index: -1
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translateX(-50%) translateY(-50%)
+        width: calc(100% - 40px)
+        height: calc(100% - 40px)
+        background-color: rgba($green, .7)
+    &:hover
+      .vc_column-inner:before
+        width: calc(100% - 30px)
+        height: calc(100% - 30px)
+        background-color: rgba($green, .5)
+      .view-video:before
+        transform: translateX(-50%) translateY(-50%) scale(1.1)
+    .view-video
+      background-color: transparent!important
+      border-radius: 0!important
+      display: block
+      position: absolute
+      z-index: 2
+      width: 100%
+      height: 100%
+      top: 0
+      left: 0
+      img
+        display: none
+      &:before
+        +mt
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translateX(-50%) translateY(-50%)
+        content: ''
+        width: 0
+        height: 0
+        border-style: solid
+        border-width: 26.5px 0 26.5px 28px
+        border-color: transparent transparent transparent $white
+  &__video
+
+  //descr
+  &__descr
+    padding-top: rem(27)
+    *:not(i)
+      font-family: $default-font!important
+      color: $body-color2!important
+  &__headline
+    i
+      display: none!important
+    h2
+      letter-spacing: normal!important
+
+      font-size: rem(30) !important
+      @media (min-width: $md)
+        font-size: rem(35) !important
+
+      font-weight: 400!important
+      line-height: 1.2!important
+      margin-bottom: rem(20)!important
+  &__txt
+    p
+      font-size: rem(16)
+      line-height: 1.5
+      margin-bottom: rem(20)!important
+  &__
+  &__
+  &__
+  &__

@@ -1,0 +1,91 @@
+body, html {
+  font-family: Muller;
+}
+#wrapper-content{
+   overflow-x: hidden;
+}
+.top-bar-left {
+  justify-content: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  //.MenuTopLeft .menu-top-bar-left-container
+  ul#menu-top-bar-left {
+    display: flex;
+
+    li {
+      padding: 6px 12px;
+
+      a {
+        font-size: 13px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.vc_custom_1516762767064 {
+  background-image: none !important;
+}
+
+.container .container {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.entry-content blockquote {
+  margin: 0 0 20px;
+  font-size: 17.5px;
+  position: relative;
+  border: none;
+  padding: 30px 50px 32px;
+  background-color: #92c800;
+  margin-bottom: 20px;
+
+}
+
+blockquote p {
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.777777778;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.form-search {
+  button.ere-advanced-search-btn {
+    white-space: nowrap;
+    position: absolute;
+    width: auto;
+    left: -60px;
+    min-width: 220px;
+
+    &:before {
+      content: "";
+      width: 29px;
+      height: 32px;
+      position: absolute;
+      top: 50%;
+      margin-top: -14px;
+      right: 10px;
+      background-image: url("../img/hand.png");
+    }
+  }
+}
+
+.MapObjectWrap {
+  width: 100%;
+  position: relative;
+
+  .MapInfo {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 35px;
+    padding-right: 25px;
+    border-radius: 10px;
+  }
+}

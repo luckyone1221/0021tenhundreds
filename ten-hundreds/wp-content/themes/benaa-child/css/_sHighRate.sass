@@ -1,0 +1,235 @@
+// start .sHightRate
+.sHightRate
+  .container
+    @media (min-width: $xl)
+      max-width: 1140px!important
+  *
+    font-family: $default-font!important
+
+  padding-bottom: rem(20)
+  @media(min-width: $lg)
+    padding-bottom: rem(29)
+
+  .section-title
+    h2
+      color: $body-color2
+
+      font-size: rem(30)
+      @media (min-width: $md)
+        font-size: rem(35)
+
+      font-weight: 400!important
+      line-height: 1.5!important
+      margin-bottom: rem(22)!important
+
+  &__col
+    margin-bottom: rem(30)
+  &__top-btns
+    display: flex
+    align-items: stretch
+    justify-content: flex-end
+    margin-bottom: rem(44)
+
+  &__dark-btn
+    //@extend .btn-dark-frame
+    background-color: $dark
+    color: $white !important
+    border-radius: rem(24)
+    position: relative
+    z-index: 1
+
+    margin-right: -30px
+    min-width: rem(140px)
+    @media (min-width: $xl)
+      margin-right: -43px
+      min-width: rem(177px)
+
+    display: flex
+    align-items: center
+    justify-content: center
+
+  &__light-btn
+    //@extend .btn
+    //@extend .btn-light
+    border-radius: rem(24)
+    text-decoration: none !important
+    height: 54px
+    
+    background-color: $gray-white
+    &:hover
+      background-color: darken($gray-white, 4)
+
+    display: flex
+    align-items: center
+    justify-content: flex-end
+
+    min-width: rem(244px)
+    padding: rem(12px) rem(27px)
+
+    i
+      width: 28px
+      height: 25px
+      margin-right: rem(8)
+      display: flex
+      align-items: center
+      justify-content: center
+
+      img
+        width: auto
+        height: auto
+        max-height: 100%
+        max-width: 100%
+
+    span
+      color: $light-blue
+
+  &__item
+    text-align: center
+    min-height: 100%
+    border-radius: rem(25)
+    overflow: hidden
+    box-shadow: -12px 12px 24px rgba(212, 226, 231, 0.75)
+    background-color: $light
+
+    @media (min-width: $sm) and (max-width: $lg)
+      display: flex
+
+  &__img-bl
+    @media (min-width: $sm) and (max-width: $lg)
+      flex-shrink: 0
+      width: 50%
+
+  &__img
+    width: 100%
+
+    position: relative
+    height: 0
+    padding-top: 68.39%
+    @media (min-width: $sm) and (max-width: $lg)
+      height: 100%
+      padding: 0
+  
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+      position: absolute
+      top: 0
+      left: 0
+
+  &__content
+    @media (min-width: $sm) and (max-width: $lg)
+      width: 50%
+      flex-shrink: 0
+
+  //head
+  &__head
+    border-bottom: 1px solid $border-light
+    padding: rem(12px) 10% rem(9px) 10%
+
+  &__title
+    color: $body-color2
+    font-size: rem(20px)
+    font-weight: 700
+    line-height: (24/20)
+    margin-bottom: rem(10px)
+
+  &__rate-cont
+    display: flex
+    align-items: center
+    justify-content: center
+
+  &__rate-txt
+    color: $body-color2
+    margin-right: rem(11px)
+
+  &__rate-icons
+    display: flex
+    align-items: center
+
+  &__rate-icon
+    margin-right: rem(4)
+    &:last-child
+      margin-right: 0
+  
+    width: 21px
+    height: 21px
+    display: flex
+    align-items: center
+    justify-content: center
+
+    img
+      width: auto
+      height: auto
+      max-width: 100%
+      max-height: 100%
+
+  //pills
+  &__pills
+    text-align: left
+
+    padding: rem(10px) 14% rem(15px) 14%
+    @media (min-width: $sm)
+      padding: rem(9px) 14% rem(34px) 14%
+  
+    border-bottom: 1px solid $border-light
+
+  &__pill
+    display: flex
+    align-items: center
+
+    width: 220px
+    margin: 0 auto rem(13px) auto
+    @media (min-width: $md)
+      width: auto
+      margin: 0 0 rem(13px) 0
+
+  &__pill-icon
+    width: rem(31px)
+    height: rem(31px)
+    margin-right: rem(14px)
+
+    display: flex
+    align-items: center
+    justify-content: flex-end
+
+    img
+      width: auto
+      height: auto
+      max-width: 100%
+      max-height: 100%
+
+  &__pill-txt
+    a, span
+      color: $body-color2
+    a
+      @include mt()
+      text-decoration: none
+      border-bottom: 1px solid $body-color
+      &:hover
+        border-bottom: 1px solid transparent
+        color: $body-color
+
+  //foot
+  &__foot
+    padding: rem(20px) 0
+    @media (min-width: $sm)
+      padding: rem(24px) 0 rem(32px) 0
+
+  &__foot-items
+    margin-bottom: rem(15px)
+    @media (min-width: $sm) 
+      margin-bottom: rem(25px)
+
+  &__foot-item
+    color: $body-color
+    margin-bottom: rem(7)
+    &:last-child
+      margin-bottom: 0
+
+  &__btn
+    min-width: 222px
+    padding: rem(15px) rem(20px)!important
+    border-radius: rem(24)!important
+    font-size: rem(16)!important

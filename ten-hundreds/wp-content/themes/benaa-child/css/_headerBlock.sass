@@ -1,0 +1,193 @@
+.header-parallax-wrap
+  @media (min-width: $xl)
+    max-width: calc(100% - 60px)
+    margin-left: 30px
+
+  padding: rem(100) 0 0 0
+  @media (min-width: $lg)
+    padding: rem(100) 0 0 0
+  position: relative
+  z-index: 1
+  //bg
+  &:before
+    content: ''
+    position: absolute
+    z-index: -1
+    top: 0
+    width: 120vw
+    left: calc(-1 * (120vw - 100%) / 2)
+    height: 100%
+    background-color: $light
+
+
+.header-parallax
+  //width: 1140px
+  //height: 576px
+  padding: 0 rem(20) 0 rem(20) !important
+  @media (min-width: $md)
+    padding: 0 rem(40) 0 rem(40) !important
+  @media (min-width: $lg)
+    padding: 0 rem(87) 0 rem(60) !important
+  *
+    font-family: $default-font !important
+  overflow: hidden !important
+
+  border-radius: rem(10)
+  @media (min-width: $md)
+    border-radius: rem(24) !important
+
+  .vc_row-background-overlay
+    background-color: transparent !important
+
+  //title
+  &-title
+    text-align: center
+
+    //margin-bottom: rem(30px)
+    //@media (min-width: $lg)
+    //  margin-bottom: rem(87px)
+    h2
+      color: $body-color2
+      font-size: rem(25px)
+      @media (min-width: $sm)
+        font-size: rem(35px)
+      font-weight: 400
+      line-height: 1
+      margin-bottom: rem(28px) !important
+      em
+        font-style: normal
+        color: $red !important
+    p
+      max-width: rem(790px)
+      margin-left: auto
+      margin-right: auto
+      @media (min-width: $xl)
+        left: 19px
+        position: relative
+
+      color: $gray
+
+      font-size: rem(16px)
+      @media (min-width: $sm)
+        font-size: rem(20px)
+      line-height: (24/20)
+
+//header-search
+.header-search
+  //row
+  .form-search-wrap
+
+  .form-search-wrap .row
+    padding: 10px 0 !important
+    @media (min-width: $lg)
+      padding: 0 !important
+    border: none !important
+    position: relative
+    z-index: 1
+    border-radius: rem(24) !important
+    overflow: visible !important
+    &:before
+      content: ''
+      position: absolute
+      z-index: -1
+      display: block
+      width: calc(100% + 18px)
+      height: calc(100% + 18px)
+      left: -9px
+      top: -9px
+      background-color: rgba(255,255,255, .68)
+      border-radius: rem(24) !important
+
+    //border: 9px solid rgba(255,255,255, .68) !important
+    .col-lg-2
+      border: none !important
+      background-color: transparent !important
+      padding: 0 10px !important
+      height: auto !important
+
+      &:last-child
+        border-radius: 0 rem(24) rem(24) 0 !important
+        @media (min-width: $lg)
+          padding: 0 !important
+        //background-color: red
+      select
+        max-height: 54px !important
+        box-shadow: none
+        background-color: transparent !important
+        padding: 0 30px 0 0 !important
+        //margin-left: 20px !important
+        white-space: nowrap
+        text-overflow: ellipsis
+        max-width: 100%
+
+      button
+        border-radius: rem(24) !important
+        padding: 13px 40px
+
+//review-txt
+.review-txt
+  @media (min-width: $xl)
+    position: relative
+    left: -30px
+  p
+    &:before
+      content: ''
+      display: block
+      width: 91px
+      height: 82px
+      background-image: url(../img/number-one.png)
+      background-size: cover
+      background-repeat: no-repeat
+      background-position: center
+
+    color: $gray
+    font-family: $default-font
+    font-size: 10px
+    line-height: 0.8
+    letter-spacing: 0.5px
+    margin-bottom: 0
+    padding-bottom: rem(21)
+    
+//
+
+// start .sHeadVantage
+.sHeadVantage
+  font-family: $default-font!important
+  padding: rem(30) 0 0 0
+  position: relative
+  z-index: 1
+  &:before
+    content: ''
+    position: absolute
+    z-index: -1
+    top: 0
+    width: 120vw
+    height: 100%
+    left: calc(-1 * (120vw - 100%) / 2)
+    background-color: $light
+  .container
+    @media (min-width: $xl)
+      max-width: 1140px!important
+  &__col
+    display: flex
+    align-items: flex-start
+    margin-bottom: rem(30)
+    p
+      color: $body-color2
+      font-size: $em-base
+      font-weight: 400
+      line-height: 24px
+      margin-bottom: 0
+  &__img
+    width: rem(30px)
+    height: rem(30px)
+    @media (min-width: $sm)
+      width: rem(58px)
+      height: rem(58px)
+
+    margin-right: rem(15)
+    img
+      width: auto
+      height: auto
+      max-width: 100%
+      max-height: 100%

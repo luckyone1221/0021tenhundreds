@@ -1,0 +1,102 @@
+.sSteps
+  margin-left: auto
+  margin-right: auto
+  max-width: 1140px
+
+  *
+    font-family: $default-font !important
+  //
+
+  padding: rem(30) 0 rem(40) 0
+  @media (min-width: $md)
+    padding: rem(47) 0 rem(81) 0
+
+  //
+  &__title
+    h2
+      text-align: center
+      font-weight: 400 !important
+      color: $body-color2
+
+      font-size: rem(30)
+      margin-bottom: rem(30) !important
+      @media (min-width: $md)
+        font-size: rem(35)
+        margin-bottom: rem(51) !important
+
+  &__steps-cont
+    box-shadow: -12px 12px 24px rgba(212, 226, 231, 0.75)
+    background-color: $light
+    border-radius: rem(20)
+
+    padding: rem(30px) rem(20px)
+    @media (min-width: $sm)
+      padding: rem(40px) rem(30px)
+    @media (min-width: $xl)
+      padding: 72px 61px 79px 64px
+
+    //row
+    .row
+      counter-reset: list 0
+
+  //col
+  &__col
+    &:nth-child(2n)
+      @media (min-width: $xl)
+        padding-left: 80px
+
+    @media (max-width: $lg)
+      &:last-child
+        .sSteps__step:last-child
+          margin-bottom: 0 !important
+          &:after
+            content: none
+    @media (min-width: $lg)
+      .sSteps__step:last-child
+        margin-bottom: 0 !important
+        &:after
+          content: none
+
+
+
+  &__step
+    position: relative
+    display: flex
+    align-items: flex-start
+    margin-bottom: rem(61px)
+
+    &:after
+      content: ''
+      position: absolute
+      left: -1px
+      top: calc(100% + 1px)
+      width: 12px
+      height: 24px
+
+      background-image: url(../img/arrow-down.png)
+      background-size: cover
+      background-repeat: no-repeat
+      background-position: center
+  &__step-num
+    flex-shrink: 0
+    width: rem(67px)
+
+    color: $body-color2
+    font-weight: bold
+    font-size: rem(16)
+    line-height: 1.5
+
+    list-style-type: none
+    &:after
+      counter-increment: list /* Увеличиваем значение счетчика */
+      content: " "counter(list) /* Выводим число */
+      color: $red
+
+  &__step-txt
+    color: $body-color2
+    font-size: rem(16)
+    line-height: (24/16)
+  &__
+  &__
+  &__
+  &__

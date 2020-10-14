@@ -1,0 +1,198 @@
+# Translation of Plugins - Recent Posts Widget With Thumbnails - Stable (latest release) in Russian
+# This file is distributed under the same license as the Plugins - Recent Posts Widget With Thumbnails - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2018-10-04 17:43:31+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: ru\n"
+"Project-Id-Version: Plugins - Recent Posts Widget With Thumbnails - Stable (latest release)\n"
+
+#: includes/form.php:56
+msgid "Set post category names as links, pointing to their archives?"
+msgstr "Укажите имена рубрик в качестве ссылок, указывая на их архивы?"
+
+#: includes/form.php:58
+msgid "Label for categories:"
+msgstr "Метка для рубрик:"
+
+#: includes/form.php:5 includes/form.php:48 includes/form.php:60
+msgid "This field can be empty."
+msgstr "Это поле может быть пустым."
+
+#: includes/form.php:27
+msgid "If activated the option to keep sticky posts on top will be ignored."
+msgstr "Если отмечено, то прикреплённые записи будут проигнорированы."
+
+#: includes/form.php:79
+msgid "Set signs after excerpt as a link to the post?"
+msgstr "Установить признак после анонса в качестве ссылки на запись?"
+
+#: includes/form.php:150
+msgid "For developers: If checked you can set CSS rules for each list item on base of the assigned categories."
+msgstr "Для разработчиков: если отмечено, то вы можете установить правила CSS для каждого элемента списка на основе назначенных рубрик."
+
+#: includes/form.php:149
+msgid "Print slugs of post categories in class attribute of LI elements?"
+msgstr "Прописывать ярлыки рубрик в атрибуте CSS-класса элементам LI?"
+
+#: includes/form.php:82
+msgid "Ignore post excerpt field as excerpt source?"
+msgstr "Игнорировать поле отрывок в качестве источника аннонса?"
+
+#: includes/form.php:83
+msgid "Normally the widget takes the excerpt from the text of the excerpt field unchanged and if there is no text it creates the excerpt from the post content automatically. If this option is activated the excerpt is created from the post content only."
+msgstr "Обычно виджет выводит анонс из текста поля отрывка без изменений, а если текст отсутствует, то анонс автоматически создается из записи. Если этот параметр активирован, анонс будет сознан из содержимого записи."
+
+#: includes/form.php:162
+msgid "Do you need more options?"
+msgstr "Вам нужно больше вариантов?"
+
+#: includes/form.php:162
+msgid "Get Ultimate Post List Pro!"
+msgstr "Посмотрите список Pro!"
+
+#: includes/form.php:11
+msgid "Open post links in new windows?"
+msgstr "Открывать ссылку в новом окне?"
+
+#: includes/form.php:44
+msgid "Show post author?"
+msgstr "Показать автора записи?"
+
+#: includes/form.php:14
+msgid "Show posts in random order?"
+msgstr "Показать записи в произвольном порядке?"
+
+#: recent-posts-widget-with-thumbnails.php:807
+msgid "Error on listing categories"
+msgstr "Ошибка листинга рубрик"
+
+#: recent-posts-widget-with-thumbnails.php:69
+msgctxt "In {categories}"
+msgid "In"
+msgstr "В"
+
+#: includes/form.php:53
+msgid "Show post categories?"
+msgstr "Показать рубрики записи?"
+
+#: includes/form.php:38
+msgid "Maximum length of post title"
+msgstr "Максимальная длина заголовка записи"
+
+#: includes/form.php:92
+msgid "Show number of comments?"
+msgstr "Показать количество комментариев?"
+
+#: recent-posts-widget-with-thumbnails.php:106
+msgid "List of your site&#8217;s most recent posts, with clickable title and thumbnails."
+msgstr "Список последних записей вашего сайта с заголовком и миниатюрами."
+
+#: includes/form.php:98
+msgid "Click on the categories with pressed CTRL key to select multiple categories. If &#8220;%s&#8221; was selected then other selections will be ignored."
+msgstr "Нажмите на рубрики с нажатой клавишей CTRL, чтобы выбрать несколько рубрик. Если &#171;%s&#187; была выбрана, то другой выбор будет проигнорирован."
+
+#: includes/form.php:35
+msgid "Do not show post title?"
+msgstr "Не показывать заголовок записи?"
+
+#: includes/form.php:161
+msgid "Do you like the plugin?"
+msgstr "Понравился ли плагин?"
+
+#: includes/form.php:124
+msgid "Height of thumbnail"
+msgstr "Высота миниатюры"
+
+#: includes/form.php:118
+msgid "If you use a specified size the following sizes will be taken, otherwise they will be ignored and the selected dimension as stored in %s will be used:"
+msgstr "При использовании указанного размера будут приняты следующие размеры, в противном случае они будут игнорироваться, и выбранное измерение, которое хранится в %s будет использоваться:"
+
+#: includes/form.php:30
+msgid "Keep sticky posts on top of the list?"
+msgstr "Держать прикрепленные записи в верхней части списка?"
+
+#: includes/form.php:36
+msgid "Make sure you set a default thumbnail for posts without a thumbnail, otherwise there will be no link."
+msgstr "Убедитесь, что вы установили миниатюру по умолчанию для записей без миниатюр. В противном случае не будет никакой связи."
+
+#: includes/form.php:72
+msgid "Maximum length of excerpt"
+msgstr "Максимальная длина анонса"
+
+#: includes/form.php:161
+msgid "Please rate it at wordpress.org!"
+msgstr "Пожалуйста, оцените его на wordpress.org!"
+
+#: recent-posts-widget-with-thumbnails.php:82
+#: recent-posts-widget-with-thumbnails.php:105
+msgid "Recent Posts With Thumbnails"
+msgstr "Последние записи с миниатюрами"
+
+#: includes/form.php:70
+msgid "Show excerpt?"
+msgstr "Показать анонс?"
+
+#: includes/form.php:65
+msgid "Show post date?"
+msgstr "Показать дату записи?"
+
+#: includes/form.php:96
+msgid "Show posts of selected categories only?"
+msgstr "Показать записи только из выбранных рубрик?"
+
+#: includes/form.php:75
+msgid "Signs after excerpt"
+msgstr "Признак после аннонса"
+
+#: includes/form.php:106
+msgid "Size of thumbnail"
+msgstr "Размер миниатюры"
+
+#: includes/form.php:108
+msgid "Specified width and height"
+msgstr "Заданной ширины и высоты"
+
+#: includes/form.php:132
+msgid "Try to use the post's first image if post has no featured image?"
+msgstr "Использовать первое изображение из текста записи, если не установлено изображение записи?"
+
+#: includes/form.php:143
+msgid "URL of default thumbnail (start with http://)"
+msgstr "Адрес миниатюры по умолчанию (начать с http://)"
+
+#: includes/form.php:128
+msgid "Use aspect ratios of original images?"
+msgstr "Использовать пропорции исходных изображений?"
+
+#: includes/form.php:138
+msgid "Use default thumbnail if no image could be determined?"
+msgstr "Использовать миниатюру по умолчанию, если никакое изображение не может быть определено?"
+
+#: includes/form.php:135
+msgid "Use first image only, ignore featured image?"
+msgstr "Использовать только первое изображение, игнорировать изображение записи?"
+
+#: includes/form.php:121
+msgid "Width of thumbnail"
+msgstr "Ширина миниатюры"
+
+#. Author of the plugin
+msgid "Martin Stehle"
+msgstr "Martin Stehle"
+
+#. Plugin URI of the plugin
+msgid "http://wordpress.org/plugins/recent-posts-widget-with-thumbnails/"
+msgstr "http://ru.wordpress.org/plugins/recent-posts-widget-with-thumbnails/"
+
+#. Plugin Name of the plugin
+msgid "Recent Posts Widget With Thumbnails"
+msgstr "Recent Posts Widget With Thumbnails"
+
+#. Description of the plugin
+msgid "Small and fast plugin to display in the sidebar a list of linked titles and thumbnails of the most recent postings"
+msgstr "Маленький и быстрый плагин для показа в области виджетов ссылок на заголовки и миниатюры недавних публикаций"

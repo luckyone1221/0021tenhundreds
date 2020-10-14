@@ -1,0 +1,84 @@
+.sForm
+  .vc_row
+    @media (min-width: $xl)
+      max-width: 1145px !important
+
+  padding: rem(35px) rem(20px) !important
+  @media (min-width: $xl)
+    padding: rem(41px) 0 rem(50px) 0 !important
+  *
+    font-family: $default-font !important
+    line-height: 1.5
+  h3, h2
+    color: $body-color2
+    font-weight: 400
+    line-height: 1.2
+
+    font-size: rem(30)!important
+    @media (min-width: $md)
+      font-size: rem(35)!important
+
+    margin-bottom: rem(16) !important
+
+  h3 + p
+    @media (min-width: $xl)
+      margin-bottom: rem(27) !important
+  p
+    color: $body-color2
+    font-size: rem(16)
+
+    margin-bottom: rem(20) !important
+    @media (min-width: $xl)
+      margin-bottom: rem(15) !important
+
+
+
+  //PhoneEmail
+  .PhoneEmail
+    align-items: stretch
+    justify-content: space-between
+    display: flex
+
+    flex-direction: column
+    @media (min-width: $lg)
+      flex-direction: row
+    span
+      margin-bottom: rem(22)!important
+      @media (min-width: $lg)
+        width: calc(50% - 4.5px)
+      input
+        @extend .sForm-input
+  .Textarea
+    padding-bottom: rem(20)
+    textarea
+      @extend .sForm-textarea
+  form
+    @media (min-width: $md)
+      max-width: 460px !important
+    input[type='submit']
+      border-radius: rem(24) !important
+      font-size: $em-base
+      padding: 16px 40px
+      @media (max-width: $sm)
+        width: 100%
+
+//frames
+.sForm-textarea
+  height: 213px
+  width: 100%
+  border-radius: rem(24)
+  padding: rem(26) rem(17)
+  resize: none
+  @include placeholder
+    color: $placeholder-gray !important
+    font-family: $default-font !important
+
+.sForm-input
+  height: auto
+  max-width: 100%
+  width: 100%
+  border-radius: rem(24)
+  padding: 19.25px 15px
+  @include placeholder
+    color: $placeholder-gray !important
+    font-family: $default-font !important

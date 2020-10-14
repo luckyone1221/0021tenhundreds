@@ -1,0 +1,239 @@
+.sProdCard
+  padding: 0 10px!important
+  *:not(i)
+    font-family: $default-font
+
+  &__right-sidebar
+    margin-bottom: rem(30)
+    @media (min-width: $lg)
+      margin-bottom: rem(47)
+    position: relative
+    &:after
+      @media (min-width: $md)
+        content: ''
+      position: absolute
+      width: 300vw
+      left: calc(-1  * (300vw - 100%) /2)
+      bottom: rem(0)
+      height: 1px
+      background-color: $border-light
+  //left-col
+  &__left-col
+
+  &__top-line
+    @media (min-width: $sm)
+      display: flex
+    align-items: center
+    //padding-left: rem(5)
+    margin-bottom: rem(10)
+
+  &__status
+    margin-bottom: rem(20)
+    @media (min-width: $sm)
+      margin-bottom: 0
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    padding: 2px rem(16.5) 2px rem(16.5)
+    border-radius: rem(20)
+    line-height: 1.2
+    background-color: $red
+    color: $white
+
+    font-size: 9px
+    text-transform: uppercase
+    font-weight: 400
+
+  //location
+  &__location
+    margin-bottom: rem(20)
+    @media (min-width: $sm)
+      margin-left: rem(15)
+      margin-bottom: 0
+    display: flex
+    align-items: center
+    &:before
+      content: ''
+      width: rem(21px)
+      height: rem(27px)
+      margin-right: rem(5)
+      background-image: url(../img/location-svg.svg)
+      background-size: cover
+      background-position: center
+
+    span
+      color: $gray
+      font-size: rem(16)
+      line-height: 1.5
+  &__title
+    h4
+      font-size: rem(35)
+      line-height: 1.2
+      font-weight: 400
+      color: $body-color2
+
+  &__right-col
+    @media (min-width: $md)
+      text-align: right
+  //&__price
+  &__price-prefix
+    color: $gray
+    font-size: rem(16)
+    line-height: 1.5
+
+    display: none
+    @media (min-width: $md)
+      display: block
+    margin-bottom: rem(15)
+    @media (min-width: $xl)
+      margin-bottom: 0
+
+  &__price-txt
+    white-space: nowrap
+    color: $red
+    font-size: rem(35)
+    font-weight: 400
+    line-height: 1.2
+    margin-bottom: 30px
+  //pills
+  &__pills
+    display: flex!important
+    flex-wrap: wrap
+    width: 100%
+    margin-left: -15px
+    margin-right: -15px
+  &__pill
+    margin-bottom: rem(30)
+    padding-left: 15px
+    padding-right: 15px
+    display: flex
+
+    width: 100%
+    @media (min-width: $sm)
+      width: 50%
+    @media (min-width: $lg)
+      max-width: 33%
+      width: auto
+  &__pill-img
+    flex-shrink: 0
+    width: rem(40px)
+    height: rem(40px)
+    margin-right: rem(10)
+
+    display: flex
+    align-items: flex-start
+    justify-content: center
+
+    img
+      width: auto
+      height: auto
+      max-width: 100%
+      max-height: 100%
+
+  &__pill-txt
+    color: $body-color2
+    font-size: rem(16)
+    font-weight: 400
+    line-height: 1.5
+  &__pill-title
+    font-weight: 700
+    margin-bottom: rem(5)
+  &__pill-val
+    margin-bottom: rem(0)
+  //slider
+  &__slider
+    position: relative
+    //prev, next
+    .owl-prev
+      left: 10px!important
+    .owl-next
+      right: 10px!important
+      left: unset!important
+  //
+  &__thumb
+    margin-top: rem(10)
+    @media (max-width: $md)
+      display: none!important
+
+  &__thumb-img
+    cursor: pointer
+    background-color: $black
+    overflow: hidden
+    img
+      +mt
+    &:hover
+      img
+        opacity: .67
+        transform: scale(1.1)
+  &__
+
+#ere_widget_search_form-2
+  background-color: $gray-white
+  .widget-title
+    @extend .widget-title-frame
+  .ere-advanced-search-btn
+    @extend .green-btn-frame
+
+  .form-group
+
+  select
+    border: 1px solid #c4d0d4
+    background-color: transparent!important
+    margin-bottom: rem(20) !important
+    position: relative
+    &:after
+      content: ''
+      position: absolute
+      right: 15px
+      top: 0
+      height: 10px
+      width: 10px
+      background-color: red
+  .sProdCard__form-search
+    padding-left: 5px
+    padding-right: 5px
+    .title-slider-filter
+      white-space: nowrap
+
+#ere_widget_mortgage_calculator-2
+  margin-bottom: rem(30)
+  @media (min-width: $lg)
+    margin-bottom: rem(55)
+  .widget-title
+    @extend .widget-title-frame
+  .lowerFilters
+    background-color: $gray-white
+    padding: rem(20) 10px
+  .form-group.mc-item
+    margin-bottom: rem(20)
+  .title-mc-item
+    color: $dark !important
+    margin-bottom: rem(0)
+    font-size: rem(14)
+  #btn_mc
+    @extend .green-btn-frame
+    margin-bottom: rem(20)
+
+
+.widget-title-frame
+  background-color: $dark
+  padding: rem(10) !important
+  text-transform: none
+  font-weight: bold!important
+  font-size: rem(16)
+  span
+    display: block
+    text-align: center!important
+
+.green-btn-frame
+  position: static
+  background-color: $green
+  color: $white
+  font-size: rem(16)
+  font-weight: 400
+  text-transform: none
+  &:hover
+    background-color: darken($green, 3)
+    box-shadow: 0 0 10px -3px darken($green, 3)
+  &:before
+    content: none

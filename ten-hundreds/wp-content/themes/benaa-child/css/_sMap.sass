@@ -1,0 +1,122 @@
+.sMap
+  font-family: $default-font
+  &__title
+    padding: rem(30) 0
+    @media (min-width: $lg)
+      padding: rem(45) 0
+    i
+      display: none!important
+    h2
+      color: $body-color2!important
+      font-family: $default-font
+
+      font-size: rem(30)
+      @media (min-width: $md)
+        font-size: rem(35)
+
+      font-weight: 400!important
+      font-style: normal!important
+      letter-spacing: normal!important
+      line-height: 1.2
+      margin-bottom: 0!important
+  &__wrap
+    margin-bottom: rem(35)
+    position: relative
+    left: calc(-1 * (100vw - 100%) / 2)
+    width: 100vw
+    @media (min-width: $xl)
+      position: static
+      left: 0
+      width: 100%
+    //5259
+  &__map-info
+    background-color: $light
+    position: static
+    padding: rem(30)
+    @media (min-width: $xl)
+      position: absolute
+      height: 497px
+      width: 361px
+      left: 67px
+      top: 67px
+      overflow: auto
+      background-color: rgba($white, .88)
+      border-radius: rem(20)
+      padding: rem(70) rem(40) rem(30) rem(50)
+
+  &__inner
+    font-size: rem(16)
+    line-height: 1.5
+    @media (min-width: $xl)
+      overflow: auto
+  &__item
+    margin-bottom: rem(20)
+    strong
+      @media (min-width: $xl)
+        display: block
+      color: $body-color2
+      margin-bottom: rem(5)
+    span
+      @media (min-width: $xl)
+        display: block
+      color: $gray
+  //bottom row
+  &__row
+    display: flex!important
+    flex-wrap: wrap
+    margin: 0 -15px
+
+    padding-bottom: rem(10)
+    @media (min-width: $xl)
+      padding-bottom: rem(30)
+  &__col
+    padding: 0 15px
+    margin-bottom: rem(30)
+
+    min-width: 100%
+    @media (min-width: $md)
+      max-width: 33.3%
+      min-width: 0
+    @media (min-width: $xl)
+      max-width: 100%
+  &__p-item
+    display: flex
+    @media (min-width: $md)
+      display: block
+      padding: rem(20) rem(15)
+      border-radius: rem(20)
+      height: 100%
+      border: 1px solid darken($light-blue, 1)
+    @media (min-width: $xl)
+      padding: rem(20) rem(20) rem(30) rem(25)
+  &__p-item-img
+    flex-shrink: 0
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-right: 15px
+    @media (min-width: $md)
+      display: block
+      margin-right: 0
+
+    height: 50px
+    width: 70px
+    margin-bottom: rem(10)
+    img
+      width: auto
+      height: auto
+      max-width: 100%
+      max-height: 100%
+  &__p-item-txt
+    font-size: rem(16)
+    line-height: 1.5
+    strong
+      display: block
+      color: $body-color2
+      margin-bottom: rem(5)
+    span
+      display: block
+      color: $gray
+  &__
+  &__
+  &__

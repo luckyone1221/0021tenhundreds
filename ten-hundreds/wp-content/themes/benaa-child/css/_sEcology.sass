@@ -1,0 +1,73 @@
+.sEcology
+
+  &__title
+    padding: rem(30) 0
+    @media (min-width: $lg)
+      padding: rem(45) 0
+    i
+      display: none!important
+    h2
+      color: $body-color2!important
+      font-family: $default-font
+
+      font-size: rem(30)
+      @media (min-width: $md)
+        font-size: rem(35)
+
+      font-weight: 400!important
+      font-style: normal!important
+      letter-spacing: normal!important
+      line-height: 1.2
+      margin-bottom: 0!important
+  &__row
+    .vc_row
+      padding-bottom: rem(20)!important
+      @media (min-width: $xl)
+        padding-bottom: rem(66)!important
+    .vc_row-fluid
+      display: flex!important
+      flex-wrap: wrap
+
+
+  &__icon
+    width: 100%!important
+    margin-bottom: rem(30)
+    @media (min-width: $sm)
+      width: 50%!important
+    @media (min-width: $xl)
+      background-color: transparent
+      width: 25%!important
+      margin-bottom: 0
+
+    //
+    @media (min-width: $sm) and (max-width: $xl)
+      &:nth-child(odd)
+        .g5plus-icon-box
+          //background-color: red
+          flex-direction: row-reverse
+        .icon-wrap
+          margin-left: rem(27)!important
+          margin-right: 0!important
+        .info-wrap
+          text-align: right
+    .g5plus-icon-box
+      padding-left: 15px
+      padding-right: 15px
+      display: flex!important
+      align-items: center
+    .icon-wrap
+      flex-shrink: 0
+      border: none!important
+      width: rem(78)!important
+      height: rem(78)!important
+      margin-right: rem(27)!important
+    .info-wrap
+      *
+        color: $body-color2
+        font-family: $default-font
+        font-size: rem(16)!important
+        letter-spacing: normal!important
+        line-height: 1.5
+      h6
+        font-weight: 700
+        margin-bottom: 0

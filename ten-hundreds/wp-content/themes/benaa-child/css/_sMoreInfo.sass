@@ -1,0 +1,45 @@
+.sMoreInfo
+  padding: rem(30) 0 rem(30) 0
+  @media (min-width: $lg)
+    padding: rem(55) 0 rem(60) 0
+
+  position: relative
+  &:after
+    content: ''
+    position: absolute
+    width: 300vw
+    left: calc(-1  * (300vw - 100%) /2)
+    bottom: 0
+    height: 1px
+    background-color: $border-light
+
+
+  *:not(i)
+    color: $body-color2
+    font-family: $default-font
+  &__title
+    text-align: center
+    margin-bottom: rem(20)
+    @media (min-width: $md)
+      margin-bottom: rem(35)
+
+    i
+      display: none!important
+    h2
+      font-weight: 400!important
+      letter-spacing: normal!important
+      line-height: 1.2
+      font-size: rem(30)
+      margin-bottom: rem(15)!important
+      @media (min-width: $md)
+        font-size: rem(35)
+        margin-bottom: rem(18)!important
+    p
+      font-size: rem(16)
+      font-weight: 400
+      line-height: 1.5
+  &__btn
+    margin-bottom: 0!important
+    button
+      color: $white!important
+  &__

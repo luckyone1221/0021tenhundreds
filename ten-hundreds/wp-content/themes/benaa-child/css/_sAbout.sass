@@ -1,0 +1,77 @@
+.sAbout
+  &__title
+    padding: rem(35) 0 rem(30) 0
+    @media (min-width: $md)
+      padding: rem(50) 0 rem(40) 0
+
+    h2
+      color: $body-color2
+      font-family: $default-font
+      margin-bottom: rem(0) !important
+      font-weight: 400 !important
+      letter-spacing: normal !important
+      line-height: 1.2
+      font-size: rem(30)
+      @media (min-width: $md)
+        font-size: rem(35)
+  //
+  padding: 0 15px rem(30) 15px !important
+  @media (min-width: $md)
+    padding: 0 rem(30) rem(30) rem(30) !important
+  @media (min-width: $lg)
+    padding: 0 rem(59) rem(46) rem(72) !important
+
+  position: relative
+  z-index: 1
+
+  &:before
+    content: ''
+    z-index: -1
+    position: absolute
+    background-color: $gray-white
+    width: 100%
+    height: calc(100% - 25px)
+    bottom: 0
+    left: 0
+
+  .vc_column-inner
+    background-color: $light
+    border-radius: rem(20)
+
+  .OZastrWrap
+    padding: rem(30) 15px rem(40) 15px
+    @media (min-width: $md)
+      padding: rem(40) rem(20) rem(60) rem(20)
+    @media (min-width: $lg)
+      padding: rem(50) rem(30) rem(100) rem(30)
+    @media (min-width: $xl)
+      padding: rem(73) rem(150) rem(150) rem(45)
+
+  &__photo
+    margin-bottom: rem(30)!important
+    @media (min-width: $md)
+      margin-bottom: 0!important
+    .vc_single_image-wrapper.vc_box_border_grey
+      width: rem(150px) !important
+      height: rem(150px) !important
+      border-radius: 50%
+      overflow: hidden
+      display: flex
+      align-items: center
+      justify-content: center
+
+      img
+        width: 100%
+        height: 100%
+
+  &__txt
+    p
+      color: $body-color2
+      font-size: rem(16)
+      line-height: 1.5
+
+      margin-bottom: rem(15)!important
+      @media (min-width: $md)
+        margin-bottom: rem(20)!important
+  &__
+  &__

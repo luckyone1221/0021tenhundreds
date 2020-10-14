@@ -1,0 +1,90 @@
+.sDiscount
+  &:not(i)
+    color: $body-color2
+    font-family: $default-font
+  &__title
+    padding-top: rem(30)
+    @media (min-width: $lg)
+      padding-top: rem(62)
+    i
+      display: none!important
+    h2
+      color: $body-color2
+      font-family: $default-font
+      font-weight: 400 !important
+      letter-spacing: normal !important
+      line-height: 1.2
+
+      font-size: rem(30)!important
+      margin-bottom: rem(15) !important
+      @media (min-width: $md)
+        font-size: rem(35)!important
+        margin-bottom: rem(18)!important
+
+      span
+        font-size: inherit!important
+        color: $green
+        font-weight: bold
+    p
+      font-size: rem(16)
+      line-height: 1.5
+      margin-bottom: rem(20)!important
+      @media (min-width: $lg)
+        margin-bottom: rem(35) !important
+  form
+    padding-bottom: rem(30)
+    @media (min-width: $lg)
+      padding-bottom: rem(64)
+
+    position: relative
+    &:after
+      content: ''
+      position: absolute
+      width: 300vw
+      left: calc(-1  * (300vw - 100%) /2)
+      bottom: 0
+      height: 1px
+      background-color: $border-light
+
+    max-width: 300px
+    @media (min-width: $md)
+      max-width: 730px
+    margin: 0 auto
+    .row
+      +roww(10px)
+      & > *
+        margin-bottom: rem(20)
+      .col-md-4
+        @media (min-width: $md)
+          width: calc(100% / 3)!important
+    input:not([type=checkbox])
+      text-align: center
+      @media (min-width: $md)
+        text-align: left
+
+      margin-bottom: 0!important
+      +placeholder
+        color: red
+      @media (min-width: $md)
+        border-radius: rem(30)!important
+        padding: 12px 25px!important
+        height: 54px
+    button
+      width: 100%
+      @media (min-width: $md)
+        border-radius: rem(30)!important
+        padding: 16px!important
+        height: 54px
+    label
+      margin-bottom: 0!important
+      display: flex
+      align-items: center
+      input
+        margin: 0 rem(10) 0 0!important
+      span
+        color: $light-gray
+        font-size: 14px
+        font-weight: 400!important
+        line-height: 1.5
+  &__
+  &__

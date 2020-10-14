@@ -1,0 +1,56 @@
+.sFeedBack
+  &__rating
+    position: relative
+    &:after
+      content: ''
+      position: absolute
+      width: 300vw
+      left: calc(-1  * (300vw - 100%) /2)
+      bottom: 0
+      height: 1px
+      background-color: $border-light
+  &__title
+    padding: rem(30) 0
+    @media (min-width: $lg)
+      padding: rem(45) 0
+    i
+      display: none!important
+    h2
+      color: $body-color2
+      font-family: $default-font
+      font-weight: 400 !important
+      letter-spacing: normal !important
+      line-height: 1.2
+      margin-bottom: rem(0) !important
+
+      font-size: rem(30)!important
+      @media (min-width: $md)
+        font-size: rem(35)!important
+  &__rating-cont
+    @media (min-width: $sm)
+      display: flex
+  &__rat-summ
+    margin-bottom: rem(20)!important
+    @media (min-width: $sm)
+      margin-bottom: rem(0) !important
+  &__o-rate
+    margin-top: 0!important
+
+//
+.sFamiliar__headline
+  padding: rem(30) 0
+  @media (min-width: $lg)
+    padding: rem(45) 0
+  i
+    display: none!important
+  h2
+    color: $body-color2
+    font-family: $default-font
+    font-weight: 400 !important
+    letter-spacing: normal !important
+    line-height: 1.2
+    margin-bottom: rem(0) !important
+
+    font-size: rem(30)!important
+    @media (min-width: $md)
+      font-size: rem(35)!important

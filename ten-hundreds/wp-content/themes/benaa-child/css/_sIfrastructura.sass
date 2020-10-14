@@ -1,0 +1,119 @@
+.sIfrastructura
+  //*:not(i)
+  //  color: $body-color2
+  //  font-family: $default-font
+  &__title-parent
+    padding: rem(30) 0 0 0
+    @media (min-width: $lg)
+      padding: rem(50) 0 0 0
+
+    @extend .painted-bg
+    &:before
+      height: calc(100% + 50px)!important
+  &__top-row
+    margin-bottom: 0!important
+  &__title
+    i
+      display: none!important
+    h2
+      color: $body-color2!important
+      font-family: $default-font
+
+      font-size: rem(30)
+      @media (min-width: $md)
+        font-size: rem(35)
+
+      font-weight: 400!important
+      font-style: normal!important
+      letter-spacing: normal!important
+      line-height: 1.2
+      margin-bottom: 0!important
+  //
+  &__row
+    @extend .painted-bg
+
+    padding-bottom: rem(30)
+    @media (min-width: $md)
+      padding-bottom: 0
+      display: flex
+      width: 100%
+      align-items: stretch
+
+  &__left-col, &__right-col
+    width: 100%!important
+    @media (min-width: $md)
+      width: 50%!important
+
+    .wpb_wrapper
+      @media (min-width: $sm) and (max-width: $md)
+        display: flex!important
+    .sIfrastructura__icon
+      @media (max-width: $sm)
+        display: flex
+        .icon-wrap
+          margin: 0 rem(20) 0 0!important
+        .info-wrap
+          text-align: left!important
+
+      @media (min-width: $sm) and (max-width: $md)
+        width: calc(100% / 3)
+        display: flex!important
+        flex-direction: column
+        align-items: center
+        .icon-wrap
+          margin: 0 0 rem(20) 0!important
+        .info-wrap
+          text-align: center!important
+
+  &__left-col
+
+  &__right-col
+
+  &__icon
+    margin-top: rem(0)!important
+    margin-bottom: rem(15)!important
+    min-height: 115px
+    &:hover
+      .icon-wrap
+        background-color: lighten($green, 3)!important
+    .icon-wrap
+      flex-shrink: 0
+      display: flex
+      align-items: center
+      justify-content: center
+      padding: rem(15)
+
+      width: rem(78px)!important
+      height: rem(78px)!important
+
+      border-radius: 50%
+      background-color: $green!important
+      border: none!important
+    .info-wrap
+      letter-spacing: normal!important
+      *:not(i)
+        color: $body-color2
+        font-family: $default-font
+        font-size: rem(16)
+      h6
+        line-height: 1.5
+        font-weight: 700
+        margin-bottom: 0
+  &__
+  &__
+  &__
+  &__
+
+.painted-bg
+  position: relative
+  z-index: 1
+  &:before
+    content: ''
+    position: absolute
+    z-index: -1
+    top: 0
+    left: -100vw
+    width: 300vw
+
+    background-color: $light
+    height: 100%

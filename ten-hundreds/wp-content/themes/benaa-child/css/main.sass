@@ -1,0 +1,185 @@
+$output-bourbon-deprecation-warnings: false
+@import "bourbon/app/assets/stylesheets/bourbon.scss"
+@import "mixin"
+
+@import "vars"
+@import "fonts"
+
+body, html
+  padding: 0
+  margin: 0
+  //font-family: $default-font !important
+  //color: $dark
+
+  font-size: 14px
+  @media (min-width: $lg)
+    font-size: 15px
+  @media (min-width: $xl)
+    font-size: 16px
+
+.pixel-perfect
+  top: 0
+  @include a-cent(x)
+  display: block
+  pointer-events: none
+  z-index: 1000
+  overflow: hidden
+  width: 100%
+  height: 600vh
+  background-position: center 0
+  background-position: center 16px
+  opacity: 0
+  //opacity: 0.7
+  background-image: url(../screen/02.png)
+
+
+#primary-content
+  background-color: $white !important
+
+//header
+.main-header
+  border-bottom: 1px solid $border-light
+  position: relative
+  //z-index: 1
+  &:after
+    content: ''
+    position: absolute
+    width: 110vw
+    left: -10vw
+    height: 1px
+    background-color: $light
+    bottom: 1px
+
+
+.top-bar-inner .row
+  align-items: stretch !important
+
+.top-bar-inner
+  font-family: $default-font
+  padding: 33px 0 35px 0 !important
+.top-bar-left
+  display: flex
+  align-items: flex-start
+
+//logo
+#g5plus_logo-6
+  margin-right: rem(23px)
+  max-width: rem(198px)
+  display: flex
+  align-items: center
+  img
+    width: auto
+    height: auto
+    max-width: 100%
+    max-height: 100%
+
+//left gray txt
+#custom_html-14
+  padding-top: rem(10px)
+  max-width: rem(320px)
+  color: $gray
+  font-size: $em-base
+  //color: red
+  //font-family: $default-font
+  line-height: (18/16)
+
+//right list
+#custom_html-15
+  ul
+    list-style: none
+    margin: 0
+    padding: 10px 15px 0 0
+
+    @media (min-width: $xl)
+      display: flex
+      align-items: center
+      justify-content: flex-end
+
+
+    li + li
+      &:before
+        content: ""
+    li
+      display: flex
+      align-items: center
+      margin-bottom: rem(20)
+      @media (min-width: $xl)
+        margin-bottom: 0
+      &:before
+        @media (max-width: $xl)
+          content: ''
+        margin: 0 19px 3px 20px
+        width: 9px
+        height: 9px
+        border-radius: 50%
+        background-color: $green
+      //
+      color: $dark
+      line-height: (18/16)
+      font-size: rem(16)
+      .red
+        margin-left: rem(5)
+        color: $red
+        font-weight: bold
+
+
+//sTest
+.sTest
+  min-height: rem(450px) !important
+  @media (min-width: $lg)
+    min-height: rem(528px) !important
+
+  *
+    font-family: $default-font !important
+  h2
+    color: $body-color2
+    font-size: rem(35px)
+    font-weight: 400
+    line-height: 1
+
+    margin-bottom: rem(15px) !important
+    @media (min-width: $lg)
+      margin-bottom: 36px !important
+  p
+    color: $body-color2
+    font-size: rem(16)
+    line-height: 1.5
+    @media (min-width: $xl)
+      position: relative
+      left: 17px
+  a
+    padding: rem(14px) rem(62px)
+    //box-shadow: -16px $em-base 22px rgba(150, 136, 114, 0.75)
+    box-shadow: 0 0 0 9px rgba($white, .76)
+    //
+    color: $white
+    font-family: $default-font !important
+    font-size: rem(16)
+    line-height: 1.5
+
+//frames
+.primary-btn-frame
+  outline: none
+
+//parts
+@import "headerBlock"
+@import "sSteps"
+@import "sForm"
+@import "sArticals"
+@import "sKnowledge"
+@import "sHighRate"
+@import "sFilters"
+@import "footer"
+
+//page 02
+@import "sProdCard"
+@import "sPlanPills"
+@import "sVideoFact"
+@import "sIfrastructura"
+@import "sEcology"
+@import "sMap"
+@import "sAddData"
+@import "sMoreInfo"
+@import "sAbout"
+@import "sDiscount"
+@import "sFeedBack"
